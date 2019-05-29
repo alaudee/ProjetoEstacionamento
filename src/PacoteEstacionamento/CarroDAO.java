@@ -44,7 +44,7 @@ public class CarroDAO {
     
     public String alterar(CarroBean carro){
        
-        String sql = "uptade carro set cor=?, descricao=? where placa=?";
+        String sql = "update carro set cor=?, descricao=? where placa=?";
         
         try{
             PreparedStatement ps = getCon().prepareStatement(sql);
